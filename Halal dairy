@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halal Dairy Pty Ltd</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #2b2b2b;
+    }
+
+    header {
+      background-color: #356859;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #2b4f3d;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1589983846995-a83d1c05ff1e') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #356859;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .product h3 {
+      margin: 15px 0 10px;
+      font-size: 1.2em;
+      color: #356859;
+    }
+
+    .product p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #356859;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #2b4f3d;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Halal Dairy Pty Ltd</h1>
+    <p>Quality. Integrity. Halal Certified.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <div>
+      <h1>Fresh Halal Dairy Delivered</h1>
+      <p>Locally sourced, ethically made</p>
+    </div>
+  </div>
+
+  <section class="section about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Halal Dairy Pty Ltd is a proudly halal-certified Australian dairy company offering pure, high-quality milk, yogurt, butter, and ghee. Our products are sourced from trusted local farms, processed under strict halal supervision, and delivered with a promise of freshness and authenticity. Whether it’s for your family, business, or community needs, we ensure every drop meets the highest standards.
+    </p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1584967267120-2c64db1e0313" alt="Milk">
+        <h3>Fresh Milk</h3>
+        <p>Locally sourced, creamy and nutritious whole milk.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1612198994172-6235f8dd998b" alt="Yogurt">
+        <h3>Yogurt</h3>
+        <p>Natural yogurt made from real cultures with no additives.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1603052877879-df823cb5b32f" alt="Butter">
+        <h3>Butter</h3>
+        <p>Traditionally churned, rich and smooth butter for every kitchen.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1668947820732-feb1683b390e" alt="Ghee">
+        <h3>Ghee</h3>
+        <p>Golden clarified butter with deep aroma and high heat stability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+  <footer>
+    &copy; 2025 Halal Dairy Pty Ltd. ABN 123 456 789. All rights reserved.
+  </footer>
+
+</body>
+</html>
